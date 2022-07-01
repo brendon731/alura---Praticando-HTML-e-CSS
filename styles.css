@@ -1,0 +1,140 @@
+:root{
+    --white-main:#FFFFFF;
+    --grey-secondary:#C0C0C0;
+    --blue-button:#167BF7;
+    --blue-button-effect:#0056c0;
+    --background-color:#00030C;
+    --main-font:"Inter"
+}
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color:var(--white-main);
+}
+body{
+    background-color: var(--background-color);
+    color:var(--white-main);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.main{
+    background-image: url("img/Background.png");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.container{
+    height:100vh;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.container__title{
+    font-size:28px;
+    font-weight: 700;
+}
+
+.button{
+    color:var(--white-main);
+    border-radius:5px;
+    padding:1em;
+    text-decoration: none;
+    margin:1em 0;
+}
+.container__box__button{
+    display:block;
+
+}
+.button_primary{
+    background-color: var(--blue-button);
+}
+.button_primary:hover{
+    background-color: var(--blue-button-effect);
+}
+.button_secondary{
+    background-color: transparent;
+    border:1px solid var(--white-main);
+}
+
+.container__warning{
+    color:var(--grey-secondary);
+    font-size: 12px;
+}
+.container__img{
+    margin:1em 0 2em 0;
+}
+.container__box{
+    margin:4em;
+    text-align: center;
+
+}
+
+.secondary{
+    align-items: center;
+    margin:0 10em;
+}
+.secondary__img{
+    width:80%;
+}
+
+.descricao__titulo{
+    font-size:48px;
+    font-weight:700;
+    color:var(--white-main);
+    margin-bottom:.1em;
+}
+.descricao__text{
+    color:var(--grey-secondary);
+    
+}
+.container__descricao{
+    margin-bottom: 6em;
+}
+.container__descricao__button{
+    display:inline-block;
+}
+.devices{
+    text-align:center;
+    margin:5em 0;
+}
+.devices__title{
+    font-size: 48px;
+    font-weight: 700;
+    
+}
+.devices__list{
+    margin-top:5em;
+    display:flex;
+    justify-content: center;
+}
+.devices__list__item{
+    list-style: none;
+    font-size:32px;
+    font-weight: 700;
+}
+.footer{
+    text-align: center;
+    padding:5em 2em;
+}
+.footer__list{
+    margin:2em 0;
+}
+.footer__list__item{
+    display:inline-block;
+    list-style: none;
+    margin:0 .5em;
+    color:var(--white-main);
+}
+.footer__list__item a:hover{
+    color:var(--blue-button);
+}
+.footer__text{
+    color:var(--grey-secondary);
+}
+
+
+
